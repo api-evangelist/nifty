@@ -1,0 +1,64 @@
+aid: nifty
+name: Nifty
+description: >-
+  Nifty is an AI-powered project management platform that consolidates roadmaps,
+  tasks, documentation, discussions, and reporting into a single application
+  for teams across engineering, marketing, sales, and product. The platform
+  offers Gantt charts, multiple task views (Kanban, List, Timeline, Calendar,
+  Swimlane), built-in discussions, document creation, and Orbit AI automation.
+  Nifty's REST API uses OAuth 2.0 with Bearer token authentication for
+  programmatic access to projects, tasks, documents, files, and team data.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Project Management
+  - Task Management
+  - Collaboration
+  - Productivity
+  - Roadmaps
+  - Team Workspace
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/nifty/refs/heads/main/apis.yml
+created: '2026-05-11'
+modified: '2026-05-11'
+specificationVersion: '0.19'
+apis:
+  - aid: nifty:public-api
+    name: Nifty Public API
+    description: >-
+      REST API for managing projects, tasks, milestones, documents, files,
+      discussions, and team members in Nifty. Authentication uses OAuth 2.0
+      with Bearer tokens, and Basic authentication is used at the
+      /oauth/token endpoint to exchange client credentials for access tokens.
+    humanURL: https://developers.niftypm.com
+    baseURL: https://openapi.niftypm.com
+    tags:
+      - Project Management
+      - Task Management
+      - Collaboration
+      - Productivity
+      - Roadmaps
+    properties:
+      - type: Documentation
+        url: https://developers.niftypm.com
+      - type: OpenAPI
+        url: https://developers.niftypm.com/source.yaml
+      - type: OpenAPI JSON
+        url: https://developers.niftypm.com/source.json
+      - type: Swagger
+        url: https://openapi.niftypm.com/api/
+
+common:
+  - type: Website
+    url: https://niftypm.com
+  - type: Documentation
+    url: https://developers.niftypm.com
+  - type: Help Center
+    url: https://help.niftypm.com
+  - type: Pricing
+    url: https://niftypm.com/pricing
+  - type: Sign Up
+    url: https://niftypm.com/signup
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
