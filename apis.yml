@@ -57,7 +57,7 @@ common:
     url: https://help.niftypm.com
   - type: Pricing
     url: https://niftypm.com/pricing
-  - type: Sign Up
+  - type: SignUp
     url: https://niftypm.com/signup
 maintainers:
   - FN: Kin Lane
