@@ -49,6 +49,8 @@ apis:
         url: https://openapi.niftypm.com/api/
 
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/nifty-project-management
   - type: Website
     url: https://niftypm.com
   - type: Documentation
