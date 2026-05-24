@@ -61,6 +61,8 @@ common:
     url: https://niftypm.com/pricing
   - type: SignUp
     url: https://niftypm.com/signup
+  - type: LLMsTxt
+    url: https://niftypm.com/llms.txt
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
