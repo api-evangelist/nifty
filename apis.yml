@@ -49,6 +49,14 @@ apis:
         url: https://openapi.niftypm.com/api/
 
 common:
+  - type: TrustCenter
+    url: security/nifty-trust-center.yml
+  - type: VulnerabilityDisclosure
+    url: security/nifty-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/nifty-domain-security.yml
+  - type: Authentication
+    url: authentication/nifty-authentication.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/nifty-project-management
   - type: Website
@@ -63,6 +71,8 @@ common:
     url: https://niftypm.com/signup
   - type: LlmsText
     url: https://niftypm.com/llms.txt
+  - url: https://niftypm.com/blog/feed/
+    type: Blog
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
