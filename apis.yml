@@ -49,6 +49,8 @@ apis:
         url: https://openapi.niftypm.com/api/
 
 common:
+  - type: AgenticAccess
+    url: agentic-access/nifty-agentic-access.yml
   - type: TrustCenter
     url: security/nifty-trust-center.yml
   - type: VulnerabilityDisclosure
