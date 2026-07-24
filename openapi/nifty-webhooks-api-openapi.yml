@@ -1,0 +1,68 @@
+openapi: 3.1.0
+info:
+  title: Nifty PM Authentication Webhooks API
+  description: 'Nifty''s public API exposes REST endpoints for managing
+
+    projects, tasks, documents, files, folders, milestones,
+
+    members, and webhooks. Access requires an access token
+
+    obtained from the authentication endpoint, and is gated
+
+    to customers on the Business plan and above.
+
+    '
+  version: 1.0.0
+servers:
+- url: https://openapi.niftypm.com/api/v1.0
+  description: Nifty public OpenAPI base URL
+security:
+- bearerAuth: []
+tags:
+- name: Webhooks
+paths:
+  /webhooks:
+    get:
+      summary: List webhooks
+      operationId: listWebhooks
+      tags:
+      - Webhooks
+      responses:
+        '200':
+          description: Webhooks collection
+    post:
+      summary: Create a webhook
+      operationId: createWebhook
+      tags:
+      - Webhooks
+      responses:
+        '201':
+          description: Webhook created
+    put:
+      summary: Update a webhook
+      operationId: updateWebhook
+      tags:
+      - Webhooks
+      responses:
+        '200':
+          description: Webhook updated
+    delete:
+      summary: Delete a webhook
+      operationId: deleteWebhook
+      tags:
+      - Webhooks
+      responses:
+        '204':
+          description: Webhook deleted
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      description: 'Bearer token authentication. Obtain an access token from the
+
+        /token endpoint and pass it in the Authorization header as
+
+        `Authorization: Bearer <token>`.
+
+        '

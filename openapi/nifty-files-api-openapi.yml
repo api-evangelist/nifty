@@ -1,0 +1,95 @@
+openapi: 3.1.0
+info:
+  title: Nifty PM Authentication Files API
+  description: 'Nifty''s public API exposes REST endpoints for managing
+
+    projects, tasks, documents, files, folders, milestones,
+
+    members, and webhooks. Access requires an access token
+
+    obtained from the authentication endpoint, and is gated
+
+    to customers on the Business plan and above.
+
+    '
+  version: 1.0.0
+servers:
+- url: https://openapi.niftypm.com/api/v1.0
+  description: Nifty public OpenAPI base URL
+security:
+- bearerAuth: []
+tags:
+- name: Files
+paths:
+  /files:
+    get:
+      summary: List files
+      operationId: listFiles
+      tags:
+      - Files
+      responses:
+        '200':
+          description: Files collection
+    post:
+      summary: Upload a file
+      operationId: createFile
+      tags:
+      - Files
+      responses:
+        '201':
+          description: File uploaded
+  /files/{id}:
+    get:
+      summary: Get a file
+      operationId: getFile
+      tags:
+      - Files
+      parameters:
+      - in: path
+        name: id
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: File details
+    put:
+      summary: Update a file
+      operationId: updateFile
+      tags:
+      - Files
+      parameters:
+      - in: path
+        name: id
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: File updated
+    delete:
+      summary: Delete a file
+      operationId: deleteFile
+      tags:
+      - Files
+      parameters:
+      - in: path
+        name: id
+        required: true
+        schema:
+          type: string
+      responses:
+        '204':
+          description: File deleted
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      description: 'Bearer token authentication. Obtain an access token from the
+
+        /token endpoint and pass it in the Authorization header as
+
+        `Authorization: Bearer <token>`.
+
+        '

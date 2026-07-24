@@ -1,0 +1,44 @@
+openapi: 3.1.0
+info:
+  title: Nifty PM Authentication API
+  description: 'Nifty''s public API exposes REST endpoints for managing
+
+    projects, tasks, documents, files, folders, milestones,
+
+    members, and webhooks. Access requires an access token
+
+    obtained from the authentication endpoint, and is gated
+
+    to customers on the Business plan and above.
+
+    '
+  version: 1.0.0
+servers:
+- url: https://openapi.niftypm.com/api/v1.0
+  description: Nifty public OpenAPI base URL
+security:
+- bearerAuth: []
+tags:
+- name: Authentication
+paths:
+  /token:
+    post:
+      summary: Generate an access token
+      operationId: generateToken
+      tags:
+      - Authentication
+      responses:
+        '200':
+          description: Token generated
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      description: 'Bearer token authentication. Obtain an access token from the
+
+        /token endpoint and pass it in the Authorization header as
+
+        `Authorization: Bearer <token>`.
+
+        '

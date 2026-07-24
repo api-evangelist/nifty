@@ -1,0 +1,95 @@
+openapi: 3.1.0
+info:
+  title: Nifty PM Authentication Folders API
+  description: 'Nifty''s public API exposes REST endpoints for managing
+
+    projects, tasks, documents, files, folders, milestones,
+
+    members, and webhooks. Access requires an access token
+
+    obtained from the authentication endpoint, and is gated
+
+    to customers on the Business plan and above.
+
+    '
+  version: 1.0.0
+servers:
+- url: https://openapi.niftypm.com/api/v1.0
+  description: Nifty public OpenAPI base URL
+security:
+- bearerAuth: []
+tags:
+- name: Folders
+paths:
+  /folders:
+    get:
+      summary: List folders
+      operationId: listFolders
+      tags:
+      - Folders
+      responses:
+        '200':
+          description: Folders collection
+    post:
+      summary: Create a folder
+      operationId: createFolder
+      tags:
+      - Folders
+      responses:
+        '201':
+          description: Folder created
+  /folders/{id}:
+    get:
+      summary: Get a folder
+      operationId: getFolder
+      tags:
+      - Folders
+      parameters:
+      - in: path
+        name: id
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Folder details
+    put:
+      summary: Update a folder
+      operationId: updateFolder
+      tags:
+      - Folders
+      parameters:
+      - in: path
+        name: id
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Folder updated
+    delete:
+      summary: Delete a folder
+      operationId: deleteFolder
+      tags:
+      - Folders
+      parameters:
+      - in: path
+        name: id
+        required: true
+        schema:
+          type: string
+      responses:
+        '204':
+          description: Folder deleted
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      description: 'Bearer token authentication. Obtain an access token from the
+
+        /token endpoint and pass it in the Authorization header as
+
+        `Authorization: Bearer <token>`.
+
+        '

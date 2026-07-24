@@ -1,0 +1,95 @@
+openapi: 3.1.0
+info:
+  title: Nifty PM Authentication Milestones API
+  description: 'Nifty''s public API exposes REST endpoints for managing
+
+    projects, tasks, documents, files, folders, milestones,
+
+    members, and webhooks. Access requires an access token
+
+    obtained from the authentication endpoint, and is gated
+
+    to customers on the Business plan and above.
+
+    '
+  version: 1.0.0
+servers:
+- url: https://openapi.niftypm.com/api/v1.0
+  description: Nifty public OpenAPI base URL
+security:
+- bearerAuth: []
+tags:
+- name: Milestones
+paths:
+  /milestones:
+    get:
+      summary: List milestones
+      operationId: listMilestones
+      tags:
+      - Milestones
+      responses:
+        '200':
+          description: Milestones collection
+    post:
+      summary: Create a milestone
+      operationId: createMilestone
+      tags:
+      - Milestones
+      responses:
+        '201':
+          description: Milestone created
+  /milestones/{id}:
+    get:
+      summary: Get a milestone
+      operationId: getMilestone
+      tags:
+      - Milestones
+      parameters:
+      - in: path
+        name: id
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Milestone details
+    put:
+      summary: Update a milestone
+      operationId: updateMilestone
+      tags:
+      - Milestones
+      parameters:
+      - in: path
+        name: id
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Milestone updated
+    delete:
+      summary: Delete a milestone
+      operationId: deleteMilestone
+      tags:
+      - Milestones
+      parameters:
+      - in: path
+        name: id
+        required: true
+        schema:
+          type: string
+      responses:
+        '204':
+          description: Milestone deleted
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      description: 'Bearer token authentication. Obtain an access token from the
+
+        /token endpoint and pass it in the Authorization header as
+
+        `Authorization: Bearer <token>`.
+
+        '

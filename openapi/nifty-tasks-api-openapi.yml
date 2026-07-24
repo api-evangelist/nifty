@@ -1,0 +1,95 @@
+openapi: 3.1.0
+info:
+  title: Nifty PM Authentication Tasks API
+  description: 'Nifty''s public API exposes REST endpoints for managing
+
+    projects, tasks, documents, files, folders, milestones,
+
+    members, and webhooks. Access requires an access token
+
+    obtained from the authentication endpoint, and is gated
+
+    to customers on the Business plan and above.
+
+    '
+  version: 1.0.0
+servers:
+- url: https://openapi.niftypm.com/api/v1.0
+  description: Nifty public OpenAPI base URL
+security:
+- bearerAuth: []
+tags:
+- name: Tasks
+paths:
+  /tasks:
+    get:
+      summary: List tasks
+      operationId: listTasks
+      tags:
+      - Tasks
+      responses:
+        '200':
+          description: Tasks collection
+    post:
+      summary: Create a task
+      operationId: createTask
+      tags:
+      - Tasks
+      responses:
+        '201':
+          description: Task created
+  /tasks/{id}:
+    get:
+      summary: Get a task by ID
+      operationId: getTask
+      tags:
+      - Tasks
+      parameters:
+      - in: path
+        name: id
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Task details
+    put:
+      summary: Update a task
+      operationId: updateTask
+      tags:
+      - Tasks
+      parameters:
+      - in: path
+        name: id
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Task updated
+    delete:
+      summary: Delete a task
+      operationId: deleteTask
+      tags:
+      - Tasks
+      parameters:
+      - in: path
+        name: id
+        required: true
+        schema:
+          type: string
+      responses:
+        '204':
+          description: Task deleted
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      description: 'Bearer token authentication. Obtain an access token from the
+
+        /token endpoint and pass it in the Authorization header as
+
+        `Authorization: Bearer <token>`.
+
+        '
