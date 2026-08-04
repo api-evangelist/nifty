@@ -1,0 +1,30 @@
+{
+  "provider": "nifty",
+  "sources": [
+    "nifty-authentication-api-openapi.yml",
+    "nifty-documents-api-openapi.yml",
+    "nifty-files-api-openapi.yml",
+    "nifty-folders-api-openapi.yml",
+    "nifty-members-api-openapi.yml",
+    "nifty-milestones-api-openapi.yml",
+    "nifty-projects-api-openapi.yml",
+    "nifty-tasks-api-openapi.yml",
+    "nifty-webhooks-api-openapi.yml"
+  ],
+  "outputs": [
+    "nifty-authentication-api-openapi.yml",
+    "nifty-documents-api-openapi.yml",
+    "nifty-files-api-openapi.yml",
+    "nifty-folders-api-openapi.yml",
+    "nifty-members-api-openapi.yml",
+    "nifty-milestones-api-openapi.yml",
+    "nifty-projects-api-openapi.yml",
+    "nifty-tasks-api-openapi.yml",
+    "nifty-webhooks-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}

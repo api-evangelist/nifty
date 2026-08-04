@@ -1,0 +1,424 @@
+openapi: 3.1.0
+info:
+  title: Nifty PM API
+  description: |
+    Nifty's public API exposes REST endpoints for managing
+    projects, tasks, documents, files, folders, milestones,
+    members, and webhooks. Access requires an access token
+    obtained from the authentication endpoint, and is gated
+    to customers on the Business plan and above.
+  version: "1.0.0"
+servers:
+  - url: https://openapi.niftypm.com/api/v1.0
+    description: Nifty public OpenAPI base URL
+security:
+  - bearerAuth: []
+paths:
+  /token:
+    post:
+      summary: Generate an access token
+      operationId: generateToken
+      tags: [Authentication]
+      responses:
+        "200":
+          description: Token generated
+  /projects:
+    get:
+      summary: List projects
+      operationId: listProjects
+      tags: [Projects]
+      responses:
+        "200":
+          description: Projects collection
+    post:
+      summary: Create a project
+      operationId: createProject
+      tags: [Projects]
+      responses:
+        "201":
+          description: Project created
+  /projects/{id}:
+    get:
+      summary: Get a project by ID
+      operationId: getProject
+      tags: [Projects]
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Project details
+    put:
+      summary: Update a project
+      operationId: updateProject
+      tags: [Projects]
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Project updated
+    delete:
+      summary: Delete a project
+      operationId: deleteProject
+      tags: [Projects]
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        "204":
+          description: Project deleted
+  /tasks:
+    get:
+      summary: List tasks
+      operationId: listTasks
+      tags: [Tasks]
+      responses:
+        "200":
+          description: Tasks collection
+    post:
+      summary: Create a task
+      operationId: createTask
+      tags: [Tasks]
+      responses:
+        "201":
+          description: Task created
+  /tasks/{id}:
+    get:
+      summary: Get a task by ID
+      operationId: getTask
+      tags: [Tasks]
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Task details
+    put:
+      summary: Update a task
+      operationId: updateTask
+      tags: [Tasks]
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Task updated
+    delete:
+      summary: Delete a task
+      operationId: deleteTask
+      tags: [Tasks]
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        "204":
+          description: Task deleted
+  /documents:
+    get:
+      summary: List documents
+      operationId: listDocuments
+      tags: [Documents]
+      responses:
+        "200":
+          description: Documents collection
+    post:
+      summary: Create a document
+      operationId: createDocument
+      tags: [Documents]
+      responses:
+        "201":
+          description: Document created
+  /documents/{id}:
+    get:
+      summary: Get a document
+      operationId: getDocument
+      tags: [Documents]
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Document details
+    put:
+      summary: Update a document
+      operationId: updateDocument
+      tags: [Documents]
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Document updated
+    delete:
+      summary: Delete a document
+      operationId: deleteDocument
+      tags: [Documents]
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        "204":
+          description: Document deleted
+  /files:
+    get:
+      summary: List files
+      operationId: listFiles
+      tags: [Files]
+      responses:
+        "200":
+          description: Files collection
+    post:
+      summary: Upload a file
+      operationId: createFile
+      tags: [Files]
+      responses:
+        "201":
+          description: File uploaded
+  /files/{id}:
+    get:
+      summary: Get a file
+      operationId: getFile
+      tags: [Files]
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: File details
+    put:
+      summary: Update a file
+      operationId: updateFile
+      tags: [Files]
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: File updated
+    delete:
+      summary: Delete a file
+      operationId: deleteFile
+      tags: [Files]
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        "204":
+          description: File deleted
+  /folders:
+    get:
+      summary: List folders
+      operationId: listFolders
+      tags: [Folders]
+      responses:
+        "200":
+          description: Folders collection
+    post:
+      summary: Create a folder
+      operationId: createFolder
+      tags: [Folders]
+      responses:
+        "201":
+          description: Folder created
+  /folders/{id}:
+    get:
+      summary: Get a folder
+      operationId: getFolder
+      tags: [Folders]
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Folder details
+    put:
+      summary: Update a folder
+      operationId: updateFolder
+      tags: [Folders]
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Folder updated
+    delete:
+      summary: Delete a folder
+      operationId: deleteFolder
+      tags: [Folders]
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        "204":
+          description: Folder deleted
+  /members:
+    get:
+      summary: List members
+      operationId: listMembers
+      tags: [Members]
+      responses:
+        "200":
+          description: Members collection
+  /members/{id}:
+    get:
+      summary: Get a member
+      operationId: getMember
+      tags: [Members]
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Member details
+  /milestones:
+    get:
+      summary: List milestones
+      operationId: listMilestones
+      tags: [Milestones]
+      responses:
+        "200":
+          description: Milestones collection
+    post:
+      summary: Create a milestone
+      operationId: createMilestone
+      tags: [Milestones]
+      responses:
+        "201":
+          description: Milestone created
+  /milestones/{id}:
+    get:
+      summary: Get a milestone
+      operationId: getMilestone
+      tags: [Milestones]
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Milestone details
+    put:
+      summary: Update a milestone
+      operationId: updateMilestone
+      tags: [Milestones]
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Milestone updated
+    delete:
+      summary: Delete a milestone
+      operationId: deleteMilestone
+      tags: [Milestones]
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        "204":
+          description: Milestone deleted
+  /webhooks:
+    get:
+      summary: List webhooks
+      operationId: listWebhooks
+      tags: [Webhooks]
+      responses:
+        "200":
+          description: Webhooks collection
+    post:
+      summary: Create a webhook
+      operationId: createWebhook
+      tags: [Webhooks]
+      responses:
+        "201":
+          description: Webhook created
+    put:
+      summary: Update a webhook
+      operationId: updateWebhook
+      tags: [Webhooks]
+      responses:
+        "200":
+          description: Webhook updated
+    delete:
+      summary: Delete a webhook
+      operationId: deleteWebhook
+      tags: [Webhooks]
+      responses:
+        "204":
+          description: Webhook deleted
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      description: |
+        Bearer token authentication. Obtain an access token from the
+        /token endpoint and pass it in the Authorization header as
+        `Authorization: Bearer <token>`.
+tags:
+  - name: Authentication
+  - name: Projects
+  - name: Tasks
+  - name: Documents
+  - name: Files
+  - name: Folders
+  - name: Members
+  - name: Milestones
+  - name: Webhooks
