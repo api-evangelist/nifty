@@ -1,0 +1,87 @@
+# Nifty
+
+> Nifty™ is an AI-powered all-in-one project management platform that unites teams, goals, and processes in a single workspace.
+
+Nifty is a comprehensive project management solution designed for teams of all sizes to manage tasks, docs, chats, roadmaps, goals, and time tracking in one unified platform. This file provides structured access to documentation about Nifty's features, integrations, use cases, pricing, and company information to help AI systems better understand and assist users with Nifty-related queries.
+
+## Product Overview
+
+- [Home](https://niftypm.com): The ultimate AI-powered project management OS for managing tasks, docs, chats, and automation
+- [Product Tour](https://niftypm.com/tour): Interactive walkthrough of Nifty's core features and capabilities
+- [Pricing](https://niftypm.com/pricing): Flexible pricing plans for startups and enterprises with flat-rate and per-user options
+
+## Core Features
+
+- [Tasks](https://niftypm.com/tasks): Organize, prioritize, and automate tasks with detailed precision adaptable to any workflow
+- [Roadmaps (Milestones)](https://niftypm.com/milestones): Visual project guides that automate milestone progress based on task completion 
+- [Discussions](https://niftypm.com/discussions): Focused collaboration amongst project members for meaningful decision making
+- [Docs & Files](https://niftypm.com/docs): Centralized collaboration hub for documents and files within projects
+- [Forms](https://niftypm.com/forms): Build beautiful forms to capture data and automate task, doc, and discussion creation
+- [Reporting & Overview](https://niftypm.com/overview): 360° reporting with birds-eye view across all projects and workloads
+- [Nifty Orbit AI](https://niftypm.com/ai): AI-powered automation for project templates, document creation, and smart task generation
+- [Goals](https://niftypm.com/goals): Trackable goals seamlessly integrated with work to measure targets and automate progress
+- [Time Tracking](https://niftypm.com/time-tracking): Real-time insights into team productivity with detailed time reports and billable hours
+- [Project Home](https://niftypm.com/project-home): Customizable project dashboards with automated status updates
+- [Project Portfolios](https://niftypm.com/portfolios): Organize and manage multiple projects with portfolio views
+
+## Integrations
+
+- [Integrations Overview](https://niftypm.com/integrations): Connect Nifty with over 2,000 apps via native integrations and Zapier
+- [Google Workspace](https://niftypm.com/integrations/google): Google Drive, Calendar, and Docs integration
+- [Microsoft Suite](https://niftypm.com/integrations): OneDrive, Office 365, and Outlook Calendar integration
+- [Slack](https://niftypm.com/integrations): Seamless team communication between Nifty and Slack
+- [Zoom & Webex](https://niftypm.com/integrations): Video meeting integration within projects
+- [GitHub](https://niftypm.com/integrations): Automatic tracking of commits, merges, and pull requests
+- [Harvest Time Tracking](https://niftypm.com/integrations): Native time tracking integration
+- [Typeform](https://niftypm.com/integrations): Turn form submissions into projects and tasks automatically
+- [Miro Whiteboards](https://niftypm.com/integrations): Embed and collaborate on Miro boards within Nifty
+
+## Use Cases & Industries
+
+- [Legal Case Management](https://niftypm.com/legal-case-management): Track billable hours, store case templates, and manage legal workflows
+- [Got Clients](https://niftypm.com/got-clients): Client collaboration and project management for agencies
+- [Agile Development](https://niftypm.com/case/agile-development): Agile project management for software and development teams
+- [Digital Agency Project Management Software](https://niftypm.com/case/digital-agency-project-management-software): Streamlined project tracking and client campaign management for digital agencies
+- [Marketing And Communication](https://niftypm.com/case/marketing-and-communication): Marketing campaign planning and communication management for creative teams
+- [Product Teams](https://niftypm.com/case/product-teams): Product roadmap planning and collaborative execution for cross-functional teams
+
+
+## Project Management Alternatives
+
+- [Asana Alternative](https://niftypm.com/asana-alternative): Why teams switch from Asana to Nifty
+- [Basecamp Alternative](https://niftypm.com/basecamp-alternative): Comparison with Basecamp features and pricing
+- [ClickUp Alternative](https://niftypm.com/clickup-alternative): How Nifty compares to ClickUp
+- [JIRA Alternative](https://niftypm.com/jira-alternative): Agile project management alternative to JIRA
+- [Monday Alternative](https://niftypm.com/monday-alternative): Feature comparison with Monday.com
+- [Confluence Alternative](https://niftypm.com/confluence-alternative): Documentation and wiki alternative 
+- [Airtable Alternative](https://niftypm.com/airtable-alternative): Database and project management comparison with Nifty
+- [Hive Alternative](https://niftypm.com/hive-alternative): Nifty and Hive key comparison and why Nifty is great fit?
+- [Flow Alternative](https://niftypm.com/flow-alternative): Task management comparison between Nifty and Flow.
+- [Clarizen Alternative](https://niftypm.com/clarizen-alternative): Enterprise project management alternative 
+
+## Company & Legal
+
+- [Privacy Policy](https://niftypm.com/privacy): GDPR-compliant data protection and privacy practices
+- [Terms of Service](https://niftypm.com/terms): Legal terms and conditions for using Nifty
+- [Cookie Policy](https://niftypm.com/cookie-policy): Information about cookies and tracking
+- [Security](https://niftypm.com/security): Security measures and data protection standards
+- [Software Review Methodology](https://niftypm.com/software-review-methodology): How Nifty evaluates and reviews software
+
+## Partners
+
+- [Partners Program](https://niftypm.com/partners): Partnership opportunities and resources for agencies and consultants
+
+## Apps
+
+- [Mobile & Desktop Apps](https://niftypm.com/apps): Download Nifty for iOS, Android, Mac, Windows, and Linux
+
+## Video & Media
+
+- [YouTube Channel](https://www.youtube.com/@NiftyPM): Product demos, tutorials, and project management tips
+
+## Optional
+
+- [Blog](https://niftypm.com/blog/): Latest updates, tips, and insights about project management
+- [Help Center](https://help.niftypm.com): Comprehensive documentation and support articles
+- [Full Documentation](https://niftypm.com/llms-full.txt): Complete product documentation in plain text
+

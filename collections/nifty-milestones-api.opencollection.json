@@ -1,0 +1,100 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Nifty PM Authentication Milestones API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Milestones",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List milestones",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://openapi.niftypm.com/api/v1.0/milestones"
+          },
+          "docs": "List milestones"
+        },
+        {
+          "info": {
+            "name": "Create a milestone",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://openapi.niftypm.com/api/v1.0/milestones"
+          },
+          "docs": "Create a milestone"
+        },
+        {
+          "info": {
+            "name": "Get a milestone",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://openapi.niftypm.com/api/v1.0/milestones/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get a milestone"
+        },
+        {
+          "info": {
+            "name": "Update a milestone",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://openapi.niftypm.com/api/v1.0/milestones/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Update a milestone"
+        },
+        {
+          "info": {
+            "name": "Delete a milestone",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://openapi.niftypm.com/api/v1.0/milestones/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete a milestone"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
