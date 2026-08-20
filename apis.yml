@@ -73,6 +73,8 @@ apis:
   humanURL: https://developers.niftypm.com
   baseURL: https://openapi.niftypm.com
   tags:
+  - File
+  tags_raw:
   - Files
   properties:
   - type: OpenAPI
@@ -137,6 +139,8 @@ apis:
   humanURL: https://developers.niftypm.com
   baseURL: https://openapi.niftypm.com
   tags:
+  - Project
+  tags_raw:
   - Projects
   properties:
   - type: OpenAPI
@@ -153,6 +157,8 @@ apis:
   humanURL: https://developers.niftypm.com
   baseURL: https://openapi.niftypm.com
   tags:
+  - Task
+  tags_raw:
   - Tasks
   properties:
   - type: OpenAPI
@@ -169,6 +175,8 @@ apis:
   humanURL: https://developers.niftypm.com
   baseURL: https://openapi.niftypm.com
   tags:
+  - Webhook
+  tags_raw:
   - Webhooks
   properties:
   - type: OpenAPI
