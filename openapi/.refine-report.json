@@ -1,15 +1,7 @@
 {
   "provider": "nifty",
   "sources": [
-    "nifty-authentication-api-openapi.yml",
-    "nifty-documents-api-openapi.yml",
-    "nifty-files-api-openapi.yml",
-    "nifty-folders-api-openapi.yml",
-    "nifty-members-api-openapi.yml",
-    "nifty-milestones-api-openapi.yml",
-    "nifty-projects-api-openapi.yml",
-    "nifty-tasks-api-openapi.yml",
-    "nifty-webhooks-api-openapi.yml"
+    "_original/nifty-openapi.yml"
   ],
   "outputs": [
     "nifty-authentication-api-openapi.yml",
@@ -25,6 +17,20 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "nifty-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "nifty-authentication-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "nifty-documents-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "nifty-files-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "nifty-folders-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "nifty-members-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "nifty-milestones-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "nifty-projects-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "nifty-tasks-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "nifty-webhooks-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }

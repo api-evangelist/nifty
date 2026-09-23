@@ -1,4 +1,4 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
   title: Nifty PM Authentication API
   description: 'Nifty''s public API exposes REST endpoints for managing
@@ -9,9 +9,7 @@ info:
 
     obtained from the authentication endpoint, and is gated
 
-    to customers on the Business plan and above.
-
-    '
+    to customers on the Business plan and above.'
   version: 1.0.0
 servers:
 - url: https://openapi.niftypm.com/api/v1.0

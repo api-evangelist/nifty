@@ -1,0 +1,34 @@
+# Front Door AI Index — nifty — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: nifty
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: niftypm.com
+  final_host: niftypm.com
+  ownership: own
+  owner: nifty
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 44
+  host_score: 44
+  density: 14.78
+  words: 2977
+  tiers:
+    agentic: 12
+    core: 29
+    model: 3
+  ambiguous: 5
+  top_terms:
+    AI: 29
+    AI assistant: 5
+    MCP: 5
+    automation: 3
+    agent: 2
+    AI agent: 1
+    ChatGPT: 1
+    Claude: 1
+    Gemini: 1
+    copilot: 1
