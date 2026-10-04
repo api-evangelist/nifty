@@ -201,6 +201,9 @@ apis:
   - type: Swagger
     url: https://openapi.niftypm.com/api/
 common:
+  - type: CapabilityMap
+    url: capabilities/nifty-capability-edges.yml
+    name: Nifty Business Capability Map
   - type: AgenticAccess
     url: agentic-access/nifty-agentic-access.yml
   - type: TrustCenter

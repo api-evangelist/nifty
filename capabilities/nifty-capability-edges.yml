@@ -1,0 +1,43 @@
+slug: nifty
+provider: Nifty
+generated_by: planning/capability-mapping/scripts/classify_capabilities.py
+model: claude-opus-5
+frame:
+- Software & Technology
+min_confidence: 0.7
+capability_model:
+  source: https://github.com/vincentmakes/turbo-ea-capabilities
+  license: CC-BY-4.0
+  attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
+    CC BY 4.0
+  notice: NOTICE
+edge_count: 3
+edges:
+- tag: Projects
+  spec_file: nifty-projects-api-openapi.yml
+  capability_id: BC-900.30
+  capability_id_l1: BC-900
+  capability_name: Project Management
+  confidence: 0.85
+  evidence: '"POST /projects createProject", "GET /projects/{id} getProject by ID"; "Nifty is an AI-powered
+    project management platform"'
+  reason: CRUD over projects in a project management platform directly realises project execution/tracking.
+- tag: Tasks
+  spec_file: nifty-tasks-api-openapi.yml
+  capability_id: BC-900.30
+  capability_id_l1: BC-900
+  capability_name: Project Management
+  confidence: 0.85
+  evidence: '"POST /tasks createTask", "PUT /tasks/{id} updateTask"; platform offers "multiple task views
+    (Kanban, List, Timeline, Calendar, Swimlane)"'
+  reason: Task lifecycle management within a project management tool is core project planning and tracking.
+- tag: Milestones
+  spec_file: nifty-milestones-api-openapi.yml
+  capability_id: BC-900.30
+  capability_id_l1: BC-900
+  capability_name: Project Management
+  confidence: 0.78
+  evidence: '"POST /milestones createMilestone", "PUT /milestones/{id} updateMilestone"; vendor is an
+    "AI-powered project management platform"'
+  reason: Milestone lifecycle management in a project management platform is project planning/tracking,
+    i.e. project management execution.
